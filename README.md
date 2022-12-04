@@ -1,6 +1,6 @@
 https://jeffrey-emanuel.medium.com/loaded-pow-a-new-direction-in-proof-of-work-algorithms-ae15ae2ae66a
 
-#"Loaded" PoW: A New Direction in Proof-of-Work Algorithms
+"Loaded" PoW: A New Direction in Proof-of-Work Algorithms
 
 While there are many who criticize the energy consumption of crypto-currency mining operations, it remains the only time tested and proven method of securing a blockchain against attackers. Other proposals, such as proof-of-stake or proof-of-importance, all suffer from the same flaw: an attacker - a hostile government, for example - could strike early and quietly, buying up a sufficient quantity of the coin at a low enough price such that it could cost-effectively undermine the security of the system at some later date - say, by implementing some form of a Sybil or "sock-puppet" attack, where the attacker mimics the appearance of a large group of unrelated users.
 But Bitcoin and other crypto-currencies such as Z-Cash and Dash use a proof-of-work ("PoW") method that does not suffer from this flaw: an attacker must expend real-world resources in the form of electricity and capital costs, and no one can make electricity for free. There is nothing that the attacker can do beforehand to place themselves in a particularly advantageous situation to attack the network. They must rely only on the brute strength of having more computing power than every other miner in the network put together. For a network like Bitcoin, the cost of waging such an attack would be in the tens of millions of dollars per day for the power alone.
