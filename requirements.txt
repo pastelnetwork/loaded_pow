@@ -1,3 +1,4 @@
 mpmath
 gmpy2
 tqdm
+colorama
