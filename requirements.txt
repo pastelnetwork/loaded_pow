@@ -1,0 +1,3 @@
+mpmath
+gmpy2
+tqdm
