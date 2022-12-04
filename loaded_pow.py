@@ -4,58 +4,29 @@ from math import floor
 from mpmath import mp, mpf
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
+from colorama import Fore
 
-#pip install mpmath, gmpy2, tqdm
-try: #For Pythonista:
-    import console, speech
-    console.set_font('Menlo-Regular', 7)
-    speech.say('Welcome to Animecoin My ning!', 'fr_FR')
-    while speech.is_speaking():
-       time.sleep(0.1)
-    def printc_ios_helper_func(input_string, r, g, b):
-        console.set_color(r, g, b)
-        print(input_string)
-    def printc_ios_func(input_string, color_code):
-        if color_code == 'g':
-            printc_ios_helper_func(input_string, 46,204,64)
-        elif color_code == 'r':
-            printc_ios_helper_func(input_string, 255,65,54)
-        elif color_code == 'c':
-            printc_ios_helper_func(input_string, 127,219,255)
-        elif color_code == 'b':
-            printc_ios_helper_func(input_string, 0,116,217)
-        elif color_code == 'y':
-            printc_ios_helper_func(input_string, 255,220,0)
-        elif color_code == 'm':
-            printc_ios_helper_func(input_string, 240,18,190)
-        elif color_code == 'k':
-            printc_ios_helper_func(input_string, 25,25,25)
-    def printrc_ios_func(input_string):
-            color_code_list = ['r','g','b','c','y','m','k']
-            printc(input_string, color_code_list[random.randint(0, len(color_code_list) - 1)])
-    printc = printc_ios_func
-    printrc = printrc_ios_func
-except: #Color:
-    from colorama import Fore
-    def printc(input_string, color_code):
-        if color_code == 'g':
-            print(Fore.LIGHTGREEN_EX + input_string)
-        elif color_code == 'r':
-            print(Fore.LIGHTRED_EX + input_string)
-        elif color_code == 'c':
-            print(Fore.LIGHTCYAN_EX + input_string)
-        elif color_code == 'b':
-            print(Fore.LIGHTBLUE_EX + input_string)
-        elif color_code == 'y':
-            print(Fore.LIGHTYELLOW_EX + input_string)
-        elif color_code == 'm':
-            print(Fore.LIGHTMAGENTA_EX + input_string)
-        elif color_code == 'k':
-            print(Fore.LIGHTBLACK_EX + input_string)
-        print(Fore.RESET)
-    def printrc(input_string):
-        color_code_list = ['r','g','b','c','y','m','k']
-        printc(input_string, color_code_list[random.randint(0, len(color_code_list) - 1)])
+#pip install mpmath, gmpy2, tqdm, colorama
+
+def printc(input_string, color_code):
+    if color_code == 'g':
+        print(Fore.LIGHTGREEN_EX + input_string)
+    elif color_code == 'r':
+        print(Fore.LIGHTRED_EX + input_string)
+    elif color_code == 'c':
+        print(Fore.LIGHTCYAN_EX + input_string)
+    elif color_code == 'b':
+        print(Fore.LIGHTBLUE_EX + input_string)
+    elif color_code == 'y':
+        print(Fore.LIGHTYELLOW_EX + input_string)
+    elif color_code == 'm':
+        print(Fore.LIGHTMAGENTA_EX + input_string)
+    elif color_code == 'k':
+        print(Fore.LIGHTBLACK_EX + input_string)
+    print(Fore.RESET)
+def printrc(input_string):
+    color_code_list = ['r','g','b','c','y','m','k']
+    printc(input_string, color_code_list[random.randint(0, len(color_code_list) - 1)])
 SLEEP_PERIOD = 2 #seconds
 SLOWDOWN = 0
 use_verbose = 0
